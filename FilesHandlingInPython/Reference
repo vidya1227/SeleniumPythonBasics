@@ -1,0 +1,101 @@
+link-------->>> https://www.softwaretestinghelp.com/python/python-file-reading-writing/
+https://www.softwaretestinghelp.com/python/input-output-python-files/
+https://www.softwaretestinghelp.com/python/python-data-types/
+https://www.softwaretestinghelp.com/python/python-variables/
+https://www.softwaretestinghelp.com/python/python-oops-concepts/
+https://docs.python.org/3/library/fileinput.html
+
+Types Of File in Python
+There are two types of files in Python and each of them are explained below in detail with examples for your easy understanding.
+
+They are:
+
+Binary file
+Text file
+Binary files in Python
+Most of the files that we see in our computer system are called binary files.
+
+Example:
+
+Document files: .pdf, .doc, .xls etc.
+Image files: .png, .jpg, .gif, .bmp etc.
+Video files: .mp4, .3gp, .mkv, .avi etc.
+Audio files: .mp3, .wav, .mka, .aac etc.
+Database files: .mdb, .accde, .frm, .sqlite etc.
+Archive files: .zip, .rar, .iso, .7z etc.
+Executable files: .exe, .dll, .class etc.
+All binary files follow a specific format. We can open some binary files in the normal text editor but we can’t read the content present inside the file. That’s because all the binary files will be encoded in the binary format, which can be understood only by a computer or machine.
+
+For handling such binary files we need a specific type of software to open it.
+
+For Example, You need Microsoft word software to open .doc binary files. Likewise, you need a pdf reader software to open .pdf binary files and you need a photo editor software to read the image files and so on.
+
+Text files in Python
+Text files don’t have any specific encoding and it can be opened in normal text editor itself.
+
+Example:
+
+Web standards: html, XML, CSS, JSON etc.
+Source code: c, app, js, py, java etc.
+Documents: txt, tex, RTF etc.
+Tabular data: csv, tsv etc.
+Configuration: ini, cfg, reg etc.
+In this tutorial, we will see how to handle both text as well as binary files with some classic examples.
+
+Python File Handling Operations
+Most importantly there are 4 types of operations that can be handled by Python on files:
+
+Open
+Read
+Write
+Close
+Other operations include:
+
+Rename
+Delete
+Python Create and Open a File
+Python has an in-built function called open() to open a file.
+
+It takes a minimum of one argument as mentioned in the below syntax. The open method returns a file object which is used to access the write, read and other in-built methods.
+
+Syntax:
+
+file_object = open(file_name, mode)
+Here, file_name is the name of the file or the location of the file that you want to open, and file_name should have the file extension included as well. Which means in test.txt – the term test is the name of the file and .txt is the extension of the file.
+
+The mode in the open function syntax will tell Python as what operation you want to do on a file.
+
+‘r' – Read Mode: Read mode is used only to read data from the file.
+‘w' – Write Mode: This mode is used when you want to write data into the file or modify it. Remember write mode overwrites the data present in the file.
+‘a' – Append Mode: Append mode is used to append data to the file. Remember data will be appended at the end of the file pointer.
+‘r+' – Read or Write Mode: This mode is used when we want to write or read the data from the same file.
+‘a+' – Append or Read Mode: This mode is used when we want to read data from the file or append the data into the same file.
+Note: The above-mentioned modes are for opening, reading or writing text files only.
+
+While using binary files, we have to use the same modes with the letter ‘b' at the end. So that Python can understand that we are interacting with binary files.
+
+‘wb’ – Open a file for write only mode in the binary format.
+‘rb’ – Open a file for the read-only mode in the binary format.
+‘ab’ – Open a file for appending only mode in the binary format.
+‘rb+’ – Open a file for read and write only mode in the binary format.
+‘ab+’ – Open a file for appending and read-only mode in the binary format.
+
+Python Read From File
+In order to read a file in python, we must open the file in read mode.
+
+There are three ways in which we can read the files in python.
+
+read([n])
+readline([n])
+readlines()
+Here, n is the number of bytes to be read.
+
+First, let's create a sample text file as shown below.
+
+Example 1:
+
+my_file = open(“C:/Documents/Python/test.txt”, “r”)
+print(my_file.read(5))
+Output:
+
+Hello

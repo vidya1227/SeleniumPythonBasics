@@ -1,0 +1,46 @@
+-----------------Demo Sites-----------------------------
+http://demoaut.katalon.com/
+https://opensource-demo.orangehrmlive.com/
+http://newtours.demoaut.com/
+https://www.expedia.com/
+https://fs2.formsite.com/meherpavan/form2/index.html?1537702596407
+http://testautomationpractice.blogspot.com/
+https://www.selenium.dev/selenium/docs/api/java/index.html
+http://demo.automationtesting.in/Windows.html
+
+Pytest html Reports Commands:
+
+pytest -v -s --html=.\Reports\LoginReport.html --self-contained-html test_DemoPytestHtmlReprt.py
+driver = webdriver.Chrome(executable_path="E:\chromedriver.exe")
+
+pytest -v -s --html=.\Reports\LoginReport.html --self-contained-html ./Testcases/test_DemoFlow.py
+https://www.programmersought.com/article/25041983813/
+
+pytest -v -s --html=.\Reports\ScreenshotReport.html --self-contained-html test_screenshot.py
+
+
+ALLURE REPORTS:
+pip install pytest-allure-adaptor
+
+Allure reports download link:
+https://docs.qameta.io/allure/
+https://repo.maven.apache.org/maven2/io/qameta/allure/allure-commandline/2.10.0/
+--->>Download ZIP file and unzip and add /bin/--->>> path to the environment variables in system
+
+
+Generate allure report:
+E:\VidyaWorkspace\PythonWorkspace\PythonProjects\SeleniumPythonBasics\com\pyTest\allureReports
+
+pytest -v -s --alluredir="E:\VidyaWorkspace\PythonWorkspace\PythonProjects\SeleniumPythonBasics\com\pyTest\allureReports" test_DemoAllure.py
+
+RUN command in Command Prompt:
+allure serve E:\VidyaWorkspace\PythonWorkspace\PythonProjects\SeleniumPythonBasics\com\pyTest\allureReports
+
+Deploy Your results to share:
+https://app.netlify.com/
+signup, then login and upload file from local/Temp of allureReports in your system.
+share URL of netlify to check report:
+>>https://app.netlify.com/sites/relaxed-lalande-5673a5/overview
+
+///////////////////java generic methods for automation linkSSS
+https://github.com/venkywarriors619/Generic-functions-Selenium-java
